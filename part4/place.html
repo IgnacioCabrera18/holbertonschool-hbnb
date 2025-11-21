@@ -7,23 +7,52 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <img src="logo.png" alt="Logo" class="logo">
+            <a href="login.html" class="login-button">Login</a>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
     <main>
-        <section id="place-details">
-            <!-- Place details will be populated dynamically -->
+        <section class="place-details">
         </section>
+
         <section id="reviews">
-            <!-- Reviews will be populated dynamically -->
+            <h3>Reviews</h3>
+            <article class="review-card">
+                <p>User: Alice</p>
+                <p>Rating: 5/5</p>
+                <p>Comment: Amazing place!</p>
+            </article>
+            <!-- Más reviews generadas dinámicamente -->
         </section>
-        <section id="add-review">
+
+        <section class="add-review">
             <h2>Add a Review</h2>
             <form id="review-form">
                 <label for="review-text">Review:</label>
                 <textarea id="review-text" name="review-text" required></textarea>
-                
+
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
                 <button type="submit">Submit</button>
             </form>
         </section>
     </main>
+
+    <footer>
+        <p>All rights reserved</p>
+    </footer>
+
     <script src="scripts.js"></script>
 </body>
 </html>

@@ -9,20 +9,32 @@
 <body>
     <header>
         <nav>
-            <a href="login.html" id="login-link">Login</a>
+            <img src="logo.png" alt="Logo" class="logo">
+            <a href="login.html" class="login-button">Login</a>
+            <a href="index.html">Home</a>
         </nav>
     </header>
+
     <main>
         <section id="filter">
             <label for="price-filter">Max Price:</label>
             <select id="price-filter">
-                <!-- Options will be populated dynamically -->
             </select>
         </section>
+
         <section id="places-list">
-            <!-- List of places will be populated dynamically -->
+            <article class="place-card">
+                <h3>Place Name</h3>
+                <p>Price per night: $100</p>
+                <a href="place.html" class="details-button">View Details</a>
+            </article>
         </section>
     </main>
+
+    <footer>
+        <p>All rights reserved</p>
+    </footer>
+
     <script src="scripts.js"></script>
 </body>
 </html>
